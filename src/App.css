@@ -1,0 +1,164 @@
+/* Inport Fonts */
+@import url('https://fonts.google.com/specimen/Overpass');
+
+/* Custom properties */
+:root {
+  --font-family: 'Overpass', sans-serif;
+  --font-size-paragraph: 15px;
+  --font-weight-paragraph: 400;
+  --font-weight-question: 700;
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --MediumGrey: hsl(216, 12%, 54%);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: black;
+}
+
+.rating-form-container {
+  width: 320px;
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rating-form {
+  background-color: var(--VeryDarkBlue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+
+.star {
+  background-color: var(--DarkBlue);
+  border-radius: 100%;
+  padding: 1rem;
+  margin: .5rem;
+}
+
+.question {
+  font-weight: var(--font-weight-question);
+  margin: .5rem;
+  color: var(--White);
+}
+
+.question-description {
+  font-weight: 100;
+  padding: .5rem;
+  color: var(--LightGrey);
+  line-height: 1.6;
+  letter-spacing: .8px;
+}
+
+.btn-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn {
+  margin: .5rem;
+  padding: 1rem;
+  background-color: var(--DarkBlue);
+  color: var(--LightGrey);
+  border-radius: 50%;
+  border: hidden;
+}
+
+.btn:hover {
+  background-color: var(--MediumGrey);
+  color: var(--VeryDarkBlue);
+}
+
+.buttonSubmit {
+  margin: .5rem;
+  padding: 1rem;
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+  border: none;
+  background-color: var(--Orange);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .8px;
+
+}
+
+.buttonSubmit:hover {
+  background-color: white;
+  color: var(--Orange);
+}
+
+.message-form-container {
+  width: 320px;
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.message-form {
+  background-color: var(--VeryDarkBlue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+
+.message-result {
+  font-weight: var(--font-weight-paragraph);
+  font-size: var(--font-size-paragraph);
+  padding: .5rem;
+  color: var(--Orange);
+  line-height: 1.6;
+  letter-spacing: .8px;
+}
+
+.message {
+  padding: .5rem;
+  color: var(--White);
+}
+
+.message-large {
+  font-weight: 100;
+  padding: .5rem;
+  color: var(--LightGrey);
+  line-height: 1.6;
+  letter-spacing: .8px;
+  text-align: center;
+}
+
+.footer {
+  color: var(--White);
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+}
